@@ -1,0 +1,391 @@
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.header {
+    height: 100vh;
+    background-image:
+            linear-gradient(to right bottom,
+            rgb(65 96 168 / 20%),
+            rgba(30, 108, 217, 0.8)),
+            url("../../assets/images/phone1.jpg");
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box > a {
+    display: inline-block;
+}
+
+.footer {
+    padding: 2rem;
+    background: #21508b;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top: 50px;
+}
+
+.fixed-header{
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: #6c6c6c7d;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+a.call-btn {
+    text-decoration: none;
+}
+
+.call-now span {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.site-logo{
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+    font-size: 14px;
+}
+
+.btn-blue {
+    background-color: #21508b;
+    color: #fff;
+    font-size: 14px;
+}
+
+.page-wrapper {
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+.page-wrapper .page-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.el-wrapper {
+    width: 30%;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.el-wrapper .box-down {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.el-wrapper .box-up {
+    width: 100%;
+    height: 10vw;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.el-wrapper .img {
+    width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-inner {
+    width: 100%;
+    text-align: center;
+}
+
+.info-inner .p-name,
+.info-inner .p-company {
+    display: block;
+}
+
+.info-inner .p-name {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #252525;
+}
+
+.info-inner .p-company {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.box-buttons {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.box-buttons .price {
+    display: block;
+    font-size: 16px;
+    color: #252525;
+}
+
+.box-buttons .more-details {
+    padding: 10px;
+    border: 1px solid #252525;
+    background: #21508b;
+}
+
+.box-buttons .more-details:hover {
+    background: white;
+}
+
+.box-buttons .more-details:hover .txt {
+    color: #21508b;
+}
+
+.box-buttons .more-details .txt {
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.color-section {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 50px;
+    border: 1px solid;
+    margin-left: 5px;
+}
+
+.main-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.header-catalog{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single_car {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.box-down .price {
+    font-weight: 600;
+}
+.car-cat {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-cat span , .meta-data div {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #252525;
+    line-height: 40px;
+}
+
+.meta-data .flex {
+    justify-content: flex-start;
+}
+
+img.car-image {
+    width: 500px;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    max-width:100%;
+}
+
+.car-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 1247px) {
+    .el-wrapper {
+        width: 45%;
+    }
+
+    .single-car .single_car{
+        width: 70vw;
+    }
+}
+
+@media (max-width: 1247px) {
+    .single_car .car-content{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .page-inner .el-wrapper .box-up{
+        height: 175px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .el-wrapper {
+        width: 345px;
+    }
+}
+
+@media (max-width: 767px) {
+    .el-wrapper {
+        width: 290px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .single-car .single_car {
+        width: 80vw
+    }
+
+}
+
+@media (max-width: 400px) {
+    #car-catalog.page-wrapper .page-inner {
+        padding: 0;
+    }
+
+    .main .main-section {
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
