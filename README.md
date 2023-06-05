@@ -1,2 +1,2 @@
 # WOPlabCar
-WOPlabCar test project
+WOPlabCar - Site catalog of cars
